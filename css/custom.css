@@ -12,7 +12,7 @@
 }
 
 .homeContainer .lamp{
-  height: 40vmin;
+  width: 22.5vmin;
   margin-left: 2.5vmin;
 }
 
@@ -30,15 +30,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  max-height: 7.5vh;
+  height: 7.5vh;
   margin-top: 10px;
   margin-right: 1vw;
   margin-bottom: 10px;
 }
 
-/* Removed white bg color here and moved it to the overall container. Don't need funky 43.5vh margin anymore */
 .nav-links{
-  display: flex;
   font-size: 3vmin;
   z-index: 1;
   margin-top: 70px;
@@ -89,9 +87,13 @@
   align-items: baseline;
 }
 
+.icons i{
+  display:none;
+}
+
 /* makes nav menu visible */
 .nav-active {
-  transform: translateX(0%);
+  color: #FFE41D;
 }
 
 /* animation of the links in the drop down menu */

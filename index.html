@@ -44,12 +44,12 @@
 <body id="home">
 <div class="boundingcontainer"> 
     <div class = "homeContainer">
-      <div class = "one-third column">
-        <img src="images/lamp.png" class = "lamp">
+      <div class = "one-third column"> 
+        <img src="images/lampOff.png" class = "lamp" onmouseover="hover(document.querySelector('.initials'));" onmouseout="unhover(document.querySelector('.initials'));">
       </div>
       <div class = "two-thirds column">
         <div class = "nav">
-          <ul class="nav-links">
+          <ul class="nav-links" style = "display:none;">
             <li>
               <a href = "#about" class = "about">About</a>
             </li>
@@ -68,7 +68,7 @@
           </ul>
         </div>
         <div class = "logo">
-          <img src="images/initials.png" class = "initials">
+          <img src="images/initialsNoShadow.png" class = "initials">
         </div>
         <div class = "icons">
           <i class="fa fa-envelope" aria-hidden="true" style="font-size:2.5vmax;color:#FFE41D" 

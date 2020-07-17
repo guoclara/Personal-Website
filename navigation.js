@@ -1,59 +1,76 @@
-// toggles the nav links between visible and not visible
-// adds the fade in animation for links
-// toggles the burger between up arrow and down arrow when pointer hovers over it
-function navSlide(){
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
-  const burger = document.querySelector(".burger");
-  const dropdownContainer = document.querySelector(".dropdownContainer");
+//controls the color toggling between black/grey and yellow with the click of the lamp
+function navAppear(){
+  const lamp = document.querySelector(".lamp");
+  const initials = document.querySelector(".initials");
+  const navLinks = document.querySelector(".nav-links");
+  const icons = document.querySelectorAll(".icons i");
 
-  //translates the nav links and dropdown container between on and off screen
-  nav.classList.toggle("nav-active");
-  dropdownContainer.classList.toggle("dropdownContainer-active");
-
-  //toggles between up and down arrow for burger
-  burger.classList.toggle("burger-response");
-  // setTimeout(delayIconChange = () => {burger.classList.toggle("burger-response");}, 50);
-
-  //animates the links
-  navLinks.forEach((link, index) => {
-    if(link.style.animation){
-      link.style.animation = ``;
-    } else {
-      link.style.animation = `navLinkFade 0.75 ease-in-out forwards ${index/7 +1.15}s`;
-    }
-  });
-}
-
-//turns top left home button to turn yellow on hover
-function hover(element) {
-  element.setAttribute('src', "images/csaLogoYellow.png");
-  const text = document.querySelector(".homeSection");
-  text.style.color = "#FFE12B";
-}
-
-//turns top left home button to return to white or red depending on if
-//nav menu is active or not
-
-//only used for home page
-function unhoverHomePage(element) {
-  const nav = document.querySelector(".nav-links");
-  const text = document.querySelector(".homeSection");
-  if (nav.classList.contains('nav-active')){
-    element.setAttribute('src', "images/csaLogo.png");
-    text.style.color = "#CF2127";
+  if(navLinks.style.display === "none") {
+    navLinks.style.display = "flex";
   } else {
-    element.setAttribute('src', "images/csaLogoWhite.png");
-    text.style.color = "white";
+    navLinks.style.display = "none";
+  }
+  if(initials.getAttribute('src')==="images/initialsNoShadow.png"){
+    lamp.setAttribute('src', "images/lamp.png");
+    initials.setAttribute('src', "images/initials.png");
+    // icons.forEach(icon => {
+    //     icon.style.color = '#FFE41D';
+    //   });
+    icons.forEach(icon => {
+      icon.style.display = 'flex';
+    });
+  } else {
+    lamp.setAttribute('src', "images/lampOff.png");
+    initials.setAttribute('src', "images/initialsNoShadow.png");
+    // icons.forEach(icon => {
+    //   icon.style.color = 'black';
+    // });
+    icons.forEach(icon => {
+      icon.style.display = 'none';
+    });
   }
 }
 
-//turns top left home buttom back to red for all pages except index
-function unhoverNormal(element) {
-  element.setAttribute('src', "images/csaLogo.png");
-  document.querySelector(".homeSection").style.color = "#CF2127";
+//pulls down the string of the lamp 
+function hover(element) {
+  const lamp = document.querySelector(".lamp");
+  if (element.getAttribute('src')==="images/initialsNoShadow.png"){
+    setTimeout(delayLogoChange = () => {lamp.setAttribute('src', "images/lampOffPull.png");}, 25);
+  } else {
+    lamp.setAttribute('src', "images/lampOnPull.png");
+  }
 }
 
+//pulls back the string of the lamp
+function unhover(element) {
+  const lamp = document.querySelector(".lamp");
+  if (element.getAttribute('src')==="images/initialsNoShadow.png"){
+    setTimeout(delayLogoChange = () => {lamp.setAttribute('src', "images/lampOff.png");}, 25);
+  } else {
+    lamp.setAttribute('src', "images/lamp.png");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  $(".lamp").click(navAppear)
+  // if(document.getElementById("home")) {
+  //   $(".burger").click(displayLanding);
+  // }else if(document.getElementById("thankYou")){
+  //   $(".burger").click(displayThankYou);
+  // } else {
+  //   $(".burger").click(displayMajority);
+  // }
+})
+
+//activates changeColor when on landing page
+document.addEventListener("DOMContentLoaded", function(){
+  if(document.getElementById("home")) {
+    $(".burger").click(changeColor)
+  }
+})
+
+
+/*
 function dropdownToggleScroll() {
   if (document.body.style.overflow == "hidden") {
       document.body.style.overflow = "auto";
@@ -123,22 +140,4 @@ function displayThankYou() {
     setTimeout(delayThankYouChange = () => { thankYouContainer.style.display = "none";}, 600);
   }
 }
-
-//activates navSlide function when burger clicked
-document.addEventListener("DOMContentLoaded", function(){
-  $(".burger").click(navSlide)
-  if(document.getElementById("home")) {
-    $(".burger").click(displayLanding);
-  }else if(document.getElementById("thankYou")){
-    $(".burger").click(displayThankYou);
-  } else {
-    $(".burger").click(displayMajority);
-  }
-})
-
-//activates changeColor when on landing page
-document.addEventListener("DOMContentLoaded", function(){
-  if(document.getElementById("home")) {
-    $(".burger").click(changeColor)
-  }
-})
+*/
