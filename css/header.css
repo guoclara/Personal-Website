@@ -1,0 +1,82 @@
+
+.lamp{
+    width: 22.5vmin;
+    margin-left: 3vmin;
+    position:absolute;
+    display:flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 7.5vh;
+    margin-top: 10px;
+    margin-right: 1vw;
+    margin-bottom: 10px;
+  }
+  
+  .nav-links{
+    font-size: 3vmin;
+    z-index: 1;
+    margin-top: 70px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #FFE41D;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    color: #FFE41D;
+    display: table-cell;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+    transition: 0.1s ease-in;
+  }
+  
+  .nav-links a::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #FFE41D;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .nav-links a:hover::after{
+    width: 100%;
+    left: 0;
+  }
+
+.title{
+    display:flex;
+    justify-content: flex-start;
+} 
+
+.title h1{
+  font-size: 20vmin;
+  margin-bottom: 0px;
+}
+
+.title .txt{
+  color:white;
+}
+  
+.title .period{
+  color:#FFE41D;
+}
+
+.subtitle h2{
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 5vmin;
+} 

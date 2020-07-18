@@ -20,8 +20,8 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/utils.css">
@@ -30,7 +30,6 @@
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type = "text/javascript" src="navigation.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- Font Awesome
@@ -42,48 +41,60 @@
   <link rel="icon" type="image/png" href="images/logoIcon.svg">
 
 </head>
-<body id="home">
+<body id="about">
 <div class="boundingcontainer"> 
-    <div class = "homeContainer">
-      <img src="images/lampOff.png" class = "lamp" onmouseover="hover(document.querySelector('.initials'));" onmouseout="unhover(document.querySelector('.initials'));">
-        <div class = "nav">
-          <ul class="nav-links" style = "display:none;">
-            <li>
-              <a href = "about.html" class = "about">About</a>
-            </li>
-            <li>&#160;|&#160;</li>
-            <li>
-              <a href = "experience.html" class = "experience">Experience</a>
-            </li>
-            <li>&#160;|&#160;</li>
-            <li>
-              <a href = "#projects" class = "projects">Projects</a>
-            </li>
-            <li>&#160;|&#160;</li>
-            <li>
-              <a href = "#resume" class = "resume">Resume</a>
-            </li>
-          </ul>
-        </div>
-      <div class = "mainContent">
-        <div class = "logo">
-            <img src="images/initialsNoShadow.png" class = "initials">
-        </div>
-        <div class = "icons">
-            <i class="fa fa-envelope" aria-hidden="true" style="font-size:2.5vmax;color:#FFE41D" 
-              onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#FFE41D'"></i>
-            <a href="https://www.linkedin.com/in/claraguo" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true" style="font-size:2.5vmax;color:#FFE41D"
-                onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#FFE41D'"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100013451281570" target="_blank">
-              <i class="fa fa-facebook-square" aria-hidden="true" style="font-size:2.5vmax;color:#FFE41D"
-                onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#FFE41D'"></i>
-            </a>
-        </div>
+    <div class = "aboutBanner">
+        <img src="images/lamp.png" class = "lamp">
+            <div class = "nav">
+              <ul class="nav-links" style="display:flex;">
+                <li>
+                  <a href = "about.html" class = "about">About</a>
+                </li>
+                <li>&#160;|&#160;</li>
+                <li>
+                  <a href = "experience.html" class = "experience">Experience</a>
+                </li>
+                <li>&#160;|&#160;</li>
+                <li>
+                  <a href = "#projects" class = "projects">Projects</a>
+                </li>
+                <li>&#160;|&#160;</li>
+                <li>
+                  <a href = "#resume" class = "resume">Resume</a>
+                </li>
+              </ul>
+            </div>
+            <div class = "bannerTitle">
+              <div class = "title">
+                <h1 class = "txt">About</h1><h1 class="period">.</h1>
+              </div>
+              <div class = "subtitle">
+                  <h2>
+                      <span class="text_1">Background</span>
+                      <span class="text_2">Passions</span>
+                      <span class="text_3">Goals</span>
+                      <span class="text_4">Hobbies</span>
+                  </h2>
+              </div>
+            </div>
+    <div class = "aboutContent">
+      <div class = "title">
+        <h2>Who I Am.</h2>
+        <!-- <h2 id= "titlePeriod">.</h2> -->
       </div>
-    </div>
-  </div>
+      <p>
+        Hi! I'm Clara Guo.
+        <br>
+        <br>
+        &nbsp;&nbsp; I'm a sophomore studying Applied Math-Computer Science at Brown Univeristy.
+        I'm extremely passionate about understanding how to take data and information in the world and
+        making it easier for everyone to understand. I think it's especially important to do this work
+        with the intent of pushing forward social change driven by evidence.
+        <br>
+        &nbsp;&nbsp; I'm driven by this desire and it translates to what I do and how I do it. I'm someone who thinks
+        on their feet and isn't afraid of failing. I'm proactive, self-motivated, and independent, but I
+        also work well in teams.
+      </p>
 </div>
 
 <!-- End Document

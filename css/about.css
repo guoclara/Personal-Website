@@ -1,0 +1,140 @@
+.boundingcontainer {
+    overflow-x: hidden;
+    position: relative;
+    margin: 0px;
+    height: 100vh;
+    background-color: #1c2e4a;
+}
+
+.title h2{
+  text-decoration: underline;
+  text-decoration-color: #ffb020;
+  color: white;
+
+}
+
+.title #titlePeriod{
+  color: #ffb020;
+}
+
+.aboutBanner {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height:45vh;
+  }
+
+.aboutContent p {
+  font-size: 1.5em;
+}
+
+.bannerTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.subtitle{
+  justify-content: start;
+}
+
+/* @font-face{
+    font-family: "gt-america";
+    src: url("fonts/GT-America-Medium.woff2")
+}
+
+.subtitle h2{
+    font-family: 'gt-america';
+    color: white;
+} */
+
+@keyframes text1 {
+    0%, 27.5%, 54%, 73%, 100% {
+     width: 0;
+    } 
+    14% {
+      width: 9.5ch;
+    }
+}
+
+@keyframes text2 {
+    0%, 30%, 54%, 73%, 100% {
+      width: 0;
+    } 
+    42.5%{
+      width: 7ch;
+    }
+}
+
+@keyframes text3 {
+    0%, 30%, 54%, 73%, 100% {
+      width: 0;
+    } 
+    65%{
+      width: 5ch;
+    }
+}
+
+@keyframes text4 {
+    0%, 25%, 54%, 73%, 100% {
+      width: 0;
+    } 
+    87.5% {
+      width: 7ch;
+    }
+}
+
+@keyframes blink-caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+
+.text_1{
+    animation:text1;
+}
+
+.text_2{
+    animation:text2;
+}
+
+.text_3{
+    animation:text3;
+}
+
+.text_4{
+    animation:text4;
+}
+
+.text_1, .text_2, .text_3, .text_4 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 20s;
+    animation-timing-function: steps(35, end);
+    animation-iteration-count: infinite;
+  }
+
+  .text_1::after, .text_2::after, .text_3::after, .text_4::after {
+    content: "|";
+    color: #FFE41D;
+    position: absolute;
+    right: 0;
+    animation: blink-caret step-end infinite;
+    animation-duration: 0.85s;
+    animation-timing-function: steps(1, end);
+  }
+
+.aboutContent{
+  margin: 15px 15px 15px 20px;
+  width: 75%;
+}
+
+.aboutContent p{
+  color: white;
+}
