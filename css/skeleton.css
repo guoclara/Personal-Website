@@ -542,11 +542,11 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a {
-  color: #1EAEDB;
+  color: black;
 }
 
 a:hover {
-  color: #0FA0CE;
+  color: black;
 }
 
 /* Buttons */
