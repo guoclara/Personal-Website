@@ -28,6 +28,8 @@ function prideDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
 
     let description = "San Diego Pride is a nonprofit that aims to foster pride, equality, and respect for the LGBT community. " + 
     "In addition to holding an annual Pride Parade and Festival, SD Pride is one of the only pride organizations that provides year-round education and advocacy programs. " + 
@@ -40,6 +42,8 @@ function prideDescription(){
     date.innerHTML = "May 2020 - Present";
     skills.innerHTML = skill;
     nums.innerHTML = "Raised $56,454 for a $50,000 goal. Pride Live attracted around 100,000 viewers at its peak."
+    img1.setAttribute('src', '');
+    img2.setAttribute('src', '');
 }
 
 function stemsDescription(){
@@ -47,6 +51,8 @@ function stemsDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
 
     let description = "STEMS is a math and science tutoring program at Hope High School. " + 
     "Tutors are paired in a teacher's class and help students twice a week. " + 
@@ -59,6 +65,8 @@ function stemsDescription(){
     date.innerHTML = "September 2019 - Present";
     skills.innerHTML = skill;
     nums.innerHTML = "";
+    img1.setAttribute('src', '');
+    img2.setAttribute('src', '');
 }
 
 function fsabDescription(){
@@ -66,7 +74,8 @@ function fsabDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
-
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
     
     let description = "Full Stack At Brown completes pro-bono projects for members of the Brown community to give them the ability to provide their users well designed and well built software. " + 
     "FSAB provide our community with workshops and other resources to get involved in the world of software engineering. " + 
@@ -78,6 +87,8 @@ function fsabDescription(){
     date.innerHTML = "September 2019 - Present";
     skills.innerHTML = skill;
     nums.innerHTML = "";
+    img1.setAttribute('src', 'images/csa.png');
+    img2.setAttribute('src', '');
 }
 
 function agssDescription(){
@@ -85,7 +96,8 @@ function agssDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
-
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
     
     let description = "All Girls STEM Society is a student run nonprofit that aims to empower young girls to pursue STEM through various free events (e.g. outreach, math tournaments) and workshops. " + 
     "In libraries across San Diego County, AGSS runs monthly workshops that involve speakers, original lectures, and hands-on activities. " + 
@@ -100,6 +112,8 @@ function agssDescription(){
     date.innerHTML = "March 2016 - August 2019";
     skills.innerHTML = skill;
     nums.innerHTML = numbers;
+    img1.setAttribute('src', 'images/agssSteam.jpg');
+    img2.setAttribute('src', 'images/agssCircuit.jpg');
 }
 
 function ljpcDescription(){
@@ -107,7 +121,8 @@ function ljpcDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
-
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
     
     let description = "La Jolla Pharmaceutical Company develops and commercializes innovative therapies that improve outcomes in patients suffering from life-threatening diseases. " + 
     "In December 2017, GIAPREZA™ (angiotensin II) was approved by the U.S. Food and Drug Administration (FDA) to treat adults with septic or other distributive shock. " + 
@@ -120,6 +135,8 @@ function ljpcDescription(){
     date.innerHTML = "June 2018 - August 2018";
     skills.innerHTML = skill;
     nums.innerHTML = "";
+    img1.setAttribute('src', '');
+    img2.setAttribute('src', '');
 }
 
 function sharksDescription(){
@@ -127,6 +144,8 @@ function sharksDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
 
     
     let description = "DMCV Sharks is a San Diego soccer club. "+
@@ -139,6 +158,8 @@ function sharksDescription(){
     date.innerHTML = "March 2016 - August 2019";
     skills.innerHTML = skill;
     nums.innerHTML = "";
+    img1.setAttribute('src', 'images/soccer.jpg');
+    img2.setAttribute('src', 'images/sharks.jpg');
 }
 
 function bwcsDescription(){
@@ -146,8 +167,9 @@ function bwcsDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
 
-    
     let description = "Brown Women's Club Soccer plays competitively against schools in the New England area.";
 
     let skill = "Collaboration, Goal Setting";
@@ -156,6 +178,9 @@ function bwcsDescription(){
     date.innerHTML = "September 2019 - Present";
     skills.innerHTML = skill;
     nums.innerHTML = "";
+
+    img1.setAttribute('src', 'images/bwcsPic.png');
+    img2.setAttribute('src', '');
 }
 
 function acluDescription(){
@@ -163,12 +188,14 @@ function acluDescription(){
     const nums = document.getElementById("numbers");
     const skills = document.getElementById("skills");
     const date = document.getElementById("date");
-
+    const img1 = document.getElementById("refImg1");
+    const img2 = document.getElementById("refImg2");
     
     let description = "ACLU's Brown University Chapter seeks to raise awareness around civil liberties issues. "+
     "Each semester, new working groups dedicated to various civil issues are created. "+
-    "I was a part of the Immigrants' Rights Working Group and we sought to clarify the financial aid and college application process for undocumented/DACA students. "
-    "I designed a page long infographic representing the culmination of research and interviews of relevant university staff";
+    "I was a part of the Immigrants' Rights Working Group and we sought to clarify the financial aid and college application process for undocumented/DACA students. " +
+    "I designed a page long infographic representing the culmination of research and interviews of relevant university staff. "+
+    "I also created the new branding for all Brown ACLU social media.";
 
     let skill = "Research, Effective Representation of Information, Grassroots Activism";
 
@@ -176,6 +203,8 @@ function acluDescription(){
     date.innerHTML = "September 2019 - Present";
     skills.innerHTML = skill;
     nums.innerHTML = "";
+    img1.setAttribute('src', 'images/dissentBearBlue.png');
+    img2.setAttribute('src', 'images/acluInfographic.png');
 }
 
 

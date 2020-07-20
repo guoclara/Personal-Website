@@ -113,9 +113,12 @@
     font-size: 0.85em;
     width: calc(66.6666666664% - 1em);
 } */
+#refImg1{
+    margin-bottom: 5vh;
+}
 
-#refImg{
-    max-height: 55vh;
+#refImg1, #refImg2{
+    max-width: 90%;
 }
 
 @media (max-width: 1200px) and (min-width: 400px){

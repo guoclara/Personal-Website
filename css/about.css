@@ -138,8 +138,8 @@
 
 #aboutContent p{
   color: white;
-  font-size: 1.5em;
-  width: 75%;
+  font-size: 1.25em;
+  width: 65%;
 }
 
 @media (max-width: 810px) and (min-width: 475px){
