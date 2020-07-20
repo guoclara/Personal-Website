@@ -39,7 +39,7 @@
 .expContent p {
   font-size: 1.5em;
   color: white;
-  justify-content: center;
+  display: inline-block;
 }
 
 .img:hover{

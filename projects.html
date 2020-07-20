@@ -19,7 +19,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/exp.css">
+  <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
@@ -42,7 +42,7 @@
 </head>
 <body id="experience">
 <div class="boundingcontainer"> 
-    <div class = "expBanner">
+    <div class = "projBanner">
           <img src="images/lamp.png" class = "lamp">
             <div class = "nav">
               <ul class="nav-links" style="display:flex;">
@@ -59,7 +59,7 @@
                 </li>
                 <li>&#160;|&#160;</li>
                 <li>
-                  <a href = "#resume" class = "resume">Resume</a>
+                  <a href = "resume.html" class = "resume">Resume</a>
                 </li>
               </ul>
             </div>
@@ -67,39 +67,107 @@
         <div class = "title">
             <h1 class = "txt">Projects</h1><h1 class="period">.</h1>
         </div>
+        <div class = "subtitle">
+            <h2>
+                Click project title for GitHub link (if available).
+            </h2>
+          </div>
       </div>
     </div>
-    <div class = "expContent">
-      <div class = "row">
-          <h6>Coursework</h6>
+    <div class = "projContent">
+      <h5>Coursework</h5>
+      <div class = "projs">
+        <div class = "proj">
+            <div>
+              <h6>Search</h6>
+              <p>
+                  Search engine comprised of an Indexer and Querier that processes thousands of XML files from Wikipedia. 
+                  Calculates word document frequency, inverse document frequency, and 
+                  page rank to process queries and quickly produce the top 10 most 
+                  relevant results. The Indexer portion parses files, condenses files into 
+                  essential terms, records links, and calculates relvate parameters. The Querier processes the query from the user 
+                  and calculates the relvance score of each document and prints the 10 highest scoring documents if available. 
+                  Users have the option to include page rank (i.e. the authority of pages, a technique pioneered by Google) in the score.
+              </p>
+              <p>
+                March 2020 <br>
+                Language: Scala <br>
+                Focus: Time/Space Complexity, Data Structures <br>
+                Team: Carolyn Zech
+              </p>
+            </div>
+        </div>  
+        <div class = "proj">
+          <div>
+              <h6>Recommender</h6>
+              <p>
+                Builds a decision tree from a provided dataset of objects in order to predict 
+                the value of an attribute from a new object not within the dataset (e.g. if a new applicant
+                will be rejected or accepted for a position. New Object = Applicant. Hirability = Attribute).
+                The user can select any attribute to look up a recommendation for.   
+              </p>
+              <p>
+                Febuary 2020 <br>
+                Language: Java <br>
+                Focus: Machine Learning, Ethics <br>
+                Team: Sean Zhan
+              </p>
+          </div>
+        </div>  
+        <div class = "proj">
+          <div>
+            <h6>Connect Four</h6>
+            <p>
+                Two player game of connect four played in terminal with customizable board dimensions. Option to choose the type of players
+                playing: human player or AI player. The human player is a user interface that asks a real human 
+                which move to make. The AI player selectes moves based on a game-tree search that looks at all possible game 
+                states n steps ahead, where n can be changed. It is assumed all players play with their best interest in mind.
+            </p>
+            <p>
+              December 2019 <br>
+              Language: ReasonML <br>
+              Focus: Artifical Intelligence, Softcoding <br>
+              Team: David Doan
+            </p>
+          </div>
+        </div>
+        <div class = "proj">
+          <div>
+            <h6>Rackette</h6>
+            <p>
+                Interpreter that takes in a program written in Racket as a string and processes it in ReasonML
+                to produce results. It handles definitions, conditionals, logic, let expressions,
+                procedure-application expressions, anonymous functions, and nesting. The interpreter is split into 
+                components that parse, evaluate, and converts the result back into a string.
+            </p>
+            <p>
+              November 2019 <br>
+              Language: ReasonML <br>
+              Focus: Language Processing, Evaluation, Top Level and Local Environments <br>
+              Team: Milan Samardziski
+            </p>
+          </div>
+        </div>
       </div>
-      <div class = "row">
-          <div class = "four column u-text-center">
-            <img src="images/sdpride.png" class = "img" id="sdpride">
-          </div>
-          <div class = "four column u-text-center">
-            <img src="images/sdpride.png" class = "img" id="sdpride">
-          </div>
-          <div class = "four column u-text-center">
-            <img src="images/sdpride.png" class = "img" id="sdpride">
-          </div>
+      <h5>Full Stack At Brown</h5>
+      <div class = "projs">
+        <div class = "proj" id= "fsab">
+            <div class = "fsab">
+              <h6>
+                  <a href = "https://github.com/FullStackAtBrownTeam/CSA-Website">Brown Chinese Students Association</a>
+              </h6>
+              <p>
+                Static website created for Brown University's Chinese Students Association.
+              </p>
+              <p>
+                Summer 2020 <br>
+                Language: HTML, CSS, JavaScript <br>
+                Focus: User Interface Design, Responsive Design, Branding <br>
+                Team: Trevor Ing, Casey Kim
+              </p>
+            </div>
+        </div>  
       </div>
-      <div class = "row">
-        <h6>Full Stack At Brown</h6>
-      </div>
-      <div class = "row">
-        <div class = "four column u-text-center">
-            <img src="images/sdpride.png" class = "img" id="sdpride">
-          </div>
-          <div class = "four column u-text-center">
-            <img src="images/sdpride.png" class = "img" id="sdpride">
-          </div>
-          <div class = "four column u-text-center">
-            <img src="images/sdpride.png" class = "img" id="sdpride">
-          </div>
-    </div>
-    </div>
-
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </div> 

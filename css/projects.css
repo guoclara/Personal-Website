@@ -1,0 +1,79 @@
+.boundingcontainer {
+    overflow-x: hidden;
+    position: relative;
+    margin: 0px;
+    height: 100vh;
+    background-color: white;
+}
+
+.projBanner {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height:45%;
+}
+
+.bannerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index:1;
+    -webkit-text-stroke-width: 0.1vmin;
+    -webkit-text-stroke-color: black;
+}
+
+.projContent{
+    padding: 4vh 5vw;
+    width:100%;
+}
+
+.projs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5vw;
+    grid-row-gap: 2vh;
+}
+/* 
+.proj {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+} */
+
+.projContent p {
+  font-size: 1em;
+  color: #8a8a8a;;
+  justify-content: flex-start;
+}
+/* .proj {
+    margin-right: -3vw;
+} */
+
+/* .proj:nth-child(-n+2){
+    border-right: 2px solid #c5c5c5;
+}
+
+#fsab{
+    border-right:0;
+} */
+
+.projContent h5{
+  /* color: #535353; */
+  color:#ffb020;
+}
+
+.proj h6{
+    margin-bottom: 0.5em;
+}
+
+.proj a{
+    text-decoration: none;
+    color: #222;
+}
+
+.proj a:hover {
+    color:#a09e91;
+}

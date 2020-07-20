@@ -1,0 +1,35 @@
+.boundingcontainer {
+    overflow-x: hidden;
+    position: relative;
+    margin: 0px;
+    height: 100vh;
+    background-color: white;
+}
+
+.resBanner {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height:45%;
+}
+
+.bannerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index:1;
+    -webkit-text-stroke-width: 0.1vmin;
+    -webkit-text-stroke-color: black;
+}
+
+.resContent{
+    display:flex;
+    height: 100%;
+    justify-content: center;
+}
+.resContent iframe{
+    width:100%;
+    height:100%;
+}

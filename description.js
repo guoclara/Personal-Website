@@ -34,7 +34,7 @@ function prideDescription(){
     "As the Programs Intern, I created, edited, and reviewed content and documents for live programming, organization coalitions, and volunteer resources. "+
     "I helped in person with livestream events as well as fundraising and social media moderation";
 
-    let skill = "Content/Client Management, Grassroots Activism, Effective Communication, Organization, Efficient Management of Multiple Assignments";
+    let skill = "Content/Client Management, Grassroots Activism, Effective Communication, Organization, Event Planning, Efficient Management of Multiple Assignments";
 
     descr.innerHTML = description;
     date.innerHTML = "May 2020 - Present";
