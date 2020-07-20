@@ -53,13 +53,6 @@ function unhover(element) {
 
 document.addEventListener("DOMContentLoaded", function(){
   $(".lamp").click(navAppear)
-  // if(document.getElementById("home")) {
-  //   $(".burger").click(displayLanding);
-  // }else if(document.getElementById("thankYou")){
-  //   $(".burger").click(displayThankYou);
-  // } else {
-  //   $(".burger").click(displayMajority);
-  // }
 })
 
 //activates changeColor when on landing page
