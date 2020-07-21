@@ -54,10 +54,10 @@ function stemsDescription(){
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
 
-    let description = "STEMS is a math and science tutoring program at Hope High School. " + 
+    let description = "STEMS is a math and science tutoring program at Hope High School in Providence. " + 
     "Tutors are paired in a teacher's class and help students twice a week. " + 
     "STEMS aims to offer extra help to teachers, provide academic support, and act as mentors for students, and to support a greater self-efficacy for students in STEM fields. "+
-    "As part of the Tutor Development Team, I am responsible for recruiting tutors, community building and meeting planning, running social media, and gathering feedback";
+    "As part of the Tutor Development Team, I am responsible for recruiting tutors, community building and meeting planning, running social media, and gathering feedback.";
 
     let skill = "Creative Problem Solving, Concept Visualization, Conflict Resolution, Interpersonal Skills"
 
@@ -195,8 +195,8 @@ function acluDescription(){
     let description = "ACLU's Brown University Chapter seeks to raise awareness around civil liberties issues. "+
     "Each semester, new working groups dedicated to various civil issues are created. "+
     "I was a part of the Immigrants' Rights Working Group and we sought to clarify the financial aid and college application process for undocumented/DACA students. " +
-    "I designed a page long infographic representing the culmination of research and interviews of relevant university staff. "+
-    "I also created the new branding for all Brown ACLU social media.";
+    "I designed a page long infographic (2) representing the culmination of research and interviews of relevant university staff. "+
+    "I also created the new branding for all Brown ACLU social media (1).";
 
     let skill = "Research, Effective Representation of Information, Grassroots Activism";
 
@@ -207,7 +207,6 @@ function acluDescription(){
     img1.setAttribute('src', 'images/dissentBearBlue.png');
     img2.setAttribute('src', 'images/acluInfographic.png');
 }
-
 
   //activates navSlide function when image clicked
 document.addEventListener("DOMContentLoaded", function(){
