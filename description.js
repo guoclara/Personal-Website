@@ -126,10 +126,11 @@ function ljpcDescription(){
     
     let description = "La Jolla Pharmaceutical Company develops and commercializes innovative therapies that improve outcomes in patients suffering from life-threatening diseases. " + 
     "In December 2017, GIAPREZA™ (angiotensin II) was approved by the U.S. Food and Drug Administration (FDA) to treat adults with septic or other distributive shock. " + 
-    "Using R Studio and Excel, I extractred, organized, and analyzed pharmacokinetic/pharmacodynamic data from clinical trials for toxicology reports. "+
-    "I charted macrophage levels in the blood at different dosages and times to help determine efficacy of drugs in development.";
+    "Using R Studio and Excel, I extractred, organized, merged, and analyzed pharmacokinetic/pharmacodynamic data from clinical trials for toxicology reports. "+
+    "I charted macrophage levels in the blood at different dosages and times to help determine efficacy of drugs in development. "+
+    "I then presented and explained the graphs in internal meetings";
 
-    let skill = "R Studio, Excel, Data Visualization, Self-Teaching";
+    let skill = "R Studio, Excel, Data Visualization, Self-Teaching, Data Presentation";
 
     descr.innerHTML = description;
     date.innerHTML = "June 2018 - August 2018";
