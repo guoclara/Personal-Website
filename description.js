@@ -37,14 +37,17 @@ function prideDescription(){
     let description = "San Diego Pride is a nonprofit that aims to foster pride, equality, and respect for the LGBT community. " + 
     "In addition to holding an annual Pride Parade and Festival, SD Pride is one of the only pride organizations that provides year-round education and advocacy programs. " + 
     "As the Programs Intern, I created, edited, and reviewed content and documents for live programming, organization coalitions, and volunteer resources. "+
-    "I helped in person with livestream events as well as fundraising and social media moderation";
+    "I helped manage speakers at livestream events as well as fundraise and moderate social media. With our streamed events, we were able "+
+    "to broaden our reach across the globe, including to those not out and those in countries where there is heavy stigma or homosexuality is criminalized.";
 
     let skill = "Content/Client Management, Grassroots Activism, Effective Communication, Organization, Event Planning, Efficient Management of Multiple Assignments";
 
     descr.innerHTML = description;
     date.innerHTML = "May 2020 - Present";
     skills.innerHTML = skill;
-    nums.innerHTML = "Raised $56,454 for a $50,000 goal. Pride Live attracted around 100,000 viewers at its peak."
+    nums.innerHTML = "Raised $56,454 for a $50,000 goal. "+
+    "Pride week streaming live segments reached 333,414 people, and 265,624 watched Pride Live (the stream in place of the parade and festival). "+
+    "The earned media hit 10.6 million people from the week.";
     img1.setAttribute('src', 'images/prideZoom.jpg');
     img2.setAttribute('src', '');
     caption.innerHTML = "Moderation Team Photo for Pride Live";
