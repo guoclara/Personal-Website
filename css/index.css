@@ -29,6 +29,12 @@
   margin-left: 5vw;
 }
 
+h6{
+  display:flex;
+  color:white;
+  justify-content: center;
+}
+
 .icons{
   position: relative;
   /* height: 80%; */

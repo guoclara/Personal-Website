@@ -62,7 +62,9 @@
 
 .projContent h5{
   /* color: #535353; */
-  color:#ffb020;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color:#ffb020;
 }
 
 .proj h6{
@@ -75,5 +77,5 @@
 }
 
 .proj a:hover {
-    color:#a09e91;
+    color:#ffb020;
 }
