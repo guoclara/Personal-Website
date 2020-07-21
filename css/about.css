@@ -7,6 +7,9 @@
     /* background-color: #4e5969; */
     background-color: white;
 }
+.boundingcontainer-active {
+  overflow-x: scroll;
+}
 
 .title h2{
   text-decoration: underline;

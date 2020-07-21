@@ -115,19 +115,25 @@
     font-size: 0.85em;
     width: calc(66.6666666664% - 1em);
 } */
-#refImg1{
-    margin-bottom: 5vh;
+
+#caption{
+    font-size: 0.85em;
 }
 
 #refImg1, #refImg2{
-    max-width: 90%;
+    max-width: 100%;
+    min-width: 250px;
+}
+
+.fig{
+    margin-right: 0px;
 }
 
 @media (max-width: 1200px) and (min-width: 400px){
     .lamp {
       opacity: 65%;
     }
-  }
+}
 
 .expContent h5{
     margin-top: 4vh;

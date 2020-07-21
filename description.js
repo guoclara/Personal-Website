@@ -3,10 +3,12 @@ function navSlide(){
     // const navLinks = document.querySelectorAll(".nav-links li");
     // const burger = document.querySelector(".burger");
     const slideContainer = document.querySelector(".slideContainer");
+    const boundingContainer = document.querySelector(".boundingContainer");
   
     //translates the nav links and dropdown container between on and off screen
     // nav.classList.toggle("nav-active");
     slideContainer.classList.toggle("slideContainer-active");
+    // boundingContainer.classList.toggle("boundingcontainer-active");
   
     // //toggles between up and down arrow for burger
     // burger.classList.toggle("burger-response");
@@ -30,6 +32,7 @@ function prideDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
+    const caption = document.getElementById("caption");
 
     let description = "San Diego Pride is a nonprofit that aims to foster pride, equality, and respect for the LGBT community. " + 
     "In addition to holding an annual Pride Parade and Festival, SD Pride is one of the only pride organizations that provides year-round education and advocacy programs. " + 
@@ -42,8 +45,9 @@ function prideDescription(){
     date.innerHTML = "May 2020 - Present";
     skills.innerHTML = skill;
     nums.innerHTML = "Raised $56,454 for a $50,000 goal. Pride Live attracted around 100,000 viewers at its peak."
-    img1.setAttribute('src', '');
+    img1.setAttribute('src', 'images/prideZoom.jpg');
     img2.setAttribute('src', '');
+    caption.innerHTML = "Moderation Team Photo for Pride Live";
 }
 
 function stemsDescription(){
@@ -53,6 +57,7 @@ function stemsDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
+    const caption = document.getElementById("caption");
 
     let description = "STEMS is a math and science tutoring program at Hope High School in Providence. " + 
     "Tutors are paired in a teacher's class and help students twice a week. " + 
@@ -67,6 +72,7 @@ function stemsDescription(){
     nums.innerHTML = "";
     img1.setAttribute('src', '');
     img2.setAttribute('src', '');
+    caption.innerHTML = "";
 }
 
 function fsabDescription(){
@@ -76,6 +82,7 @@ function fsabDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
+    const caption = document.getElementById("caption");
     
     let description = "Full Stack At Brown completes pro-bono projects for members of the Brown community to give them the ability to provide their users well designed and well built software. " + 
     "FSAB provide our community with workshops and other resources to get involved in the world of software engineering. " + 
@@ -89,6 +96,7 @@ function fsabDescription(){
     nums.innerHTML = "";
     img1.setAttribute('src', 'images/csa.png');
     img2.setAttribute('src', '');
+    caption.innerHTML = "Pages from the Brown CSA Website"
 }
 
 function agssDescription(){
@@ -98,6 +106,7 @@ function agssDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
+    const caption = document.getElementById("caption");
     
     let description = "All Girls STEM Society is a student run nonprofit that aims to empower young girls to pursue STEM through various free events (e.g. outreach, math tournaments) and workshops. " + 
     "In libraries across San Diego County, AGSS runs monthly workshops that involve speakers, original lectures, and hands-on activities. " + 
@@ -114,6 +123,8 @@ function agssDescription(){
     nums.innerHTML = numbers;
     img1.setAttribute('src', 'images/agssSteam.jpg');
     img2.setAttribute('src', 'images/agssCircuit.jpg');
+    caption.innerHTML = "(above) I'm helping a young girl test her shock absorber at a STEAM Maker Festival. "+
+    "(below) Girls gather to watch a demonstration at my circuitry workshop";
 }
 
 function ljpcDescription(){
@@ -123,6 +134,7 @@ function ljpcDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
+    const caption = document.getElementById("caption");
     
     let description = "La Jolla Pharmaceutical Company develops and commercializes innovative therapies that improve outcomes in patients suffering from life-threatening diseases. " + 
     "In December 2017, GIAPREZA™ (angiotensin II) was approved by the U.S. Food and Drug Administration (FDA) to treat adults with septic or other distributive shock. " + 
@@ -138,6 +150,7 @@ function ljpcDescription(){
     nums.innerHTML = "";
     img1.setAttribute('src', '');
     img2.setAttribute('src', '');
+    caption.innerHTML = "";
 }
 
 function sharksDescription(){
@@ -147,7 +160,7 @@ function sharksDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
-
+    const caption = document.getElementById("caption");
     
     let description = "DMCV Sharks is a San Diego soccer club. "+
     "My team traveled domestically and internationally (eg. Las Vegas, Sweden) for tournaments and showcases. "+
@@ -161,6 +174,7 @@ function sharksDescription(){
     nums.innerHTML = "";
     img1.setAttribute('src', 'images/soccer.jpg');
     img2.setAttribute('src', 'images/sharks.jpg');
+    caption.innerHTML = "Photos from varsity and club games";
 }
 
 function bwcsDescription(){
@@ -170,6 +184,7 @@ function bwcsDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
+    const caption = document.getElementById("caption");
 
     let description = "Brown Women's Club Soccer plays competitively against schools in the New England area.";
 
@@ -179,9 +194,9 @@ function bwcsDescription(){
     date.innerHTML = "September 2019 - Present";
     skills.innerHTML = skill;
     nums.innerHTML = "";
-
     img1.setAttribute('src', 'images/bwcsPic.png');
     img2.setAttribute('src', '');
+    caption.innerHTML = "BWCS Team";
 }
 
 function acluDescription(){
@@ -191,6 +206,7 @@ function acluDescription(){
     const date = document.getElementById("date");
     const img1 = document.getElementById("refImg1");
     const img2 = document.getElementById("refImg2");
+    const caption = document.getElementById("caption");
     
     let description = "ACLU's Brown University Chapter seeks to raise awareness around civil liberties issues. "+
     "Each semester, new working groups dedicated to various civil issues are created. "+
@@ -206,6 +222,8 @@ function acluDescription(){
     nums.innerHTML = "";
     img1.setAttribute('src', 'images/dissentBearBlue.png');
     img2.setAttribute('src', 'images/acluInfographic.png');
+    caption.innerHTML = "(above) Facebook Banner with bear statue from Brown's campus. "+
+    "(below) Application infographic created in Adobe Illustrator."
 }
 
   //activates navSlide function when image clicked
